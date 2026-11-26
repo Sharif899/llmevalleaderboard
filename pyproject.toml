@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-eval-leaderboard"
+version = "0.1.0"
+description = "A public leaderboard of live LLM evaluation results on Yoruba and general benchmarks, scored with a deterministic five-criterion rubric"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Sherif Olabode", email = "sharifninolee@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+lbleader = "llm_eval_leaderboard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

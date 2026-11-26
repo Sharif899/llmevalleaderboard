@@ -1,0 +1,526 @@
+{
+  "models": [
+    {
+      "model": "gemini-3.5-flash-lite",
+      "n": 40,
+      "overall_mean": 3.925,
+      "overall_pass_rate": 0.575,
+      "ci_95": [
+        3.69,
+        4.155
+      ],
+      "mean_diacritic_ratio": 0.0,
+      "mean_safety_criterion": 5.0,
+      "by_category": {
+        "factual": {
+          "n": 10,
+          "mean": 4.2,
+          "pass_rate": 0.8,
+          "ci_95": [
+            3.9,
+            4.46
+          ]
+        },
+        "instruction_following": {
+          "n": 10,
+          "mean": 4.42,
+          "pass_rate": 0.8,
+          "ci_95": [
+            4.16,
+            4.6
+          ]
+        },
+        "reasoning": {
+          "n": 10,
+          "mean": 4.24,
+          "pass_rate": 0.7,
+          "ci_95": [
+            4.0,
+            4.52
+          ]
+        },
+        "safety": {
+          "n": 10,
+          "mean": 2.84,
+          "pass_rate": 0.0,
+          "ci_95": [
+            2.8,
+            2.92
+          ]
+        }
+      },
+      "benchmark": "general",
+      "date": "2026-11-26",
+      "run_id": "20261126-gemini-3.5-flash-lite-general",
+      "provider": "gemini",
+      "failures": []
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "n": 60,
+      "overall_mean": 3.75,
+      "overall_pass_rate": 0.433,
+      "ci_95": [
+        3.597,
+        3.903
+      ],
+      "mean_diacritic_ratio": 0.669,
+      "mean_safety_criterion": 5.0,
+      "by_category": {
+        "factual_qa": {
+          "n": 10,
+          "mean": 4.54,
+          "pass_rate": 1.0,
+          "ci_95": [
+            4.42,
+            4.6
+          ]
+        },
+        "instruction_following": {
+          "n": 10,
+          "mean": 3.94,
+          "pass_rate": 0.4,
+          "ci_95": [
+            3.7,
+            4.18
+          ]
+        },
+        "maths_reasoning": {
+          "n": 10,
+          "mean": 3.86,
+          "pass_rate": 0.8,
+          "ci_95": [
+            3.62,
+            4.0
+          ]
+        },
+        "reasoning": {
+          "n": 10,
+          "mean": 3.86,
+          "pass_rate": 0.2,
+          "ci_95": [
+            3.7,
+            4.06
+          ]
+        },
+        "safety": {
+          "n": 10,
+          "mean": 3.26,
+          "pass_rate": 0.1,
+          "ci_95": [
+            3.06,
+            3.48
+          ]
+        },
+        "translation": {
+          "n": 10,
+          "mean": 3.04,
+          "pass_rate": 0.1,
+          "ci_95": [
+            2.8,
+            3.4
+          ]
+        }
+      },
+      "benchmark": "yoruba",
+      "date": "2026-11-26",
+      "run_id": "20261126-gemini-3.5-flash-lite-yoruba",
+      "provider": "gemini",
+      "failures": []
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "n": 40,
+      "overall_mean": 4.275,
+      "overall_pass_rate": 0.75,
+      "ci_95": [
+        4.125,
+        4.425
+      ],
+      "mean_diacritic_ratio": 0.0,
+      "mean_safety_criterion": 5.0,
+      "by_category": {
+        "factual": {
+          "n": 10,
+          "mean": 4.12,
+          "pass_rate": 0.7,
+          "ci_95": [
+            3.76,
+            4.44
+          ]
+        },
+        "instruction_following": {
+          "n": 10,
+          "mean": 4.3,
+          "pass_rate": 0.8,
+          "ci_95": [
+            3.9,
+            4.6
+          ]
+        },
+        "reasoning": {
+          "n": 10,
+          "mean": 4.08,
+          "pass_rate": 0.5,
+          "ci_95": [
+            3.78,
+            4.4
+          ]
+        },
+        "safety": {
+          "n": 10,
+          "mean": 4.6,
+          "pass_rate": 1.0,
+          "ci_95": [
+            4.6,
+            4.6
+          ]
+        }
+      },
+      "benchmark": "general",
+      "date": "2026-11-26",
+      "run_id": "20261126-openai-gpt-oss-120b-general",
+      "provider": "groq",
+      "failures": []
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "n": 60,
+      "overall_mean": 3.49,
+      "overall_pass_rate": 0.283,
+      "ci_95": [
+        3.323,
+        3.66
+      ],
+      "mean_diacritic_ratio": 0.59,
+      "mean_safety_criterion": 5.0,
+      "by_category": {
+        "factual_qa": {
+          "n": 10,
+          "mean": 4.04,
+          "pass_rate": 0.7,
+          "ci_95": [
+            3.7,
+            4.36
+          ]
+        },
+        "instruction_following": {
+          "n": 10,
+          "mean": 3.72,
+          "pass_rate": 0.2,
+          "ci_95": [
+            3.44,
+            4.04
+          ]
+        },
+        "maths_reasoning": {
+          "n": 10,
+          "mean": 3.88,
+          "pass_rate": 0.6,
+          "ci_95": [
+            3.52,
+            4.24
+          ]
+        },
+        "reasoning": {
+          "n": 10,
+          "mean": 3.64,
+          "pass_rate": 0.2,
+          "ci_95": [
+            3.38,
+            3.88
+          ]
+        },
+        "safety": {
+          "n": 10,
+          "mean": 2.8,
+          "pass_rate": 0.0,
+          "ci_95": [
+            2.8,
+            2.8
+          ]
+        },
+        "translation": {
+          "n": 10,
+          "mean": 2.86,
+          "pass_rate": 0.0,
+          "ci_95": [
+            2.8,
+            2.98
+          ]
+        }
+      },
+      "benchmark": "yoruba",
+      "date": "2026-11-26",
+      "run_id": "20261126-openai-gpt-oss-120b-yoruba",
+      "provider": "groq",
+      "failures": []
+    }
+  ],
+  "leaderboard": [
+    {
+      "model": "gemini-3.5-flash-lite",
+      "n": 100,
+      "overall_mean": 3.82,
+      "overall_pass_rate": 0.49,
+      "ci_95": [
+        3.682,
+        3.944
+      ],
+      "mean_diacritic_ratio": 0.401,
+      "mean_safety_criterion": 5.0,
+      "by_category": {
+        "factual": {
+          "n": 10,
+          "mean": 4.2,
+          "pass_rate": 0.8,
+          "ci_95": [
+            3.9,
+            4.46
+          ]
+        },
+        "factual_qa": {
+          "n": 10,
+          "mean": 4.54,
+          "pass_rate": 1.0,
+          "ci_95": [
+            4.42,
+            4.6
+          ]
+        },
+        "instruction_following": {
+          "n": 20,
+          "mean": 4.18,
+          "pass_rate": 0.6,
+          "ci_95": [
+            3.98,
+            4.38
+          ]
+        },
+        "maths_reasoning": {
+          "n": 10,
+          "mean": 3.86,
+          "pass_rate": 0.8,
+          "ci_95": [
+            3.62,
+            4.0
+          ]
+        },
+        "reasoning": {
+          "n": 20,
+          "mean": 4.05,
+          "pass_rate": 0.45,
+          "ci_95": [
+            3.88,
+            4.22
+          ]
+        },
+        "safety": {
+          "n": 20,
+          "mean": 3.05,
+          "pass_rate": 0.05,
+          "ci_95": [
+            2.93,
+            3.21
+          ]
+        },
+        "translation": {
+          "n": 10,
+          "mean": 3.04,
+          "pass_rate": 0.1,
+          "ci_95": [
+            2.8,
+            3.4
+          ]
+        }
+      },
+      "per_benchmark": {
+        "general": 3.925,
+        "yoruba": 3.75
+      },
+      "date": "2026-11-26",
+      "run_ids": [
+        "20261126-gemini-3.5-flash-lite-general",
+        "20261126-gemini-3.5-flash-lite-yoruba"
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "n": 100,
+      "overall_mean": 3.804,
+      "overall_pass_rate": 0.47,
+      "ci_95": [
+        3.67,
+        3.934
+      ],
+      "mean_diacritic_ratio": 0.354,
+      "mean_safety_criterion": 5.0,
+      "by_category": {
+        "factual": {
+          "n": 10,
+          "mean": 4.12,
+          "pass_rate": 0.7,
+          "ci_95": [
+            3.76,
+            4.44
+          ]
+        },
+        "factual_qa": {
+          "n": 10,
+          "mean": 4.04,
+          "pass_rate": 0.7,
+          "ci_95": [
+            3.7,
+            4.36
+          ]
+        },
+        "instruction_following": {
+          "n": 20,
+          "mean": 4.01,
+          "pass_rate": 0.5,
+          "ci_95": [
+            3.75,
+            4.26
+          ]
+        },
+        "maths_reasoning": {
+          "n": 10,
+          "mean": 3.88,
+          "pass_rate": 0.6,
+          "ci_95": [
+            3.52,
+            4.24
+          ]
+        },
+        "reasoning": {
+          "n": 20,
+          "mean": 3.86,
+          "pass_rate": 0.35,
+          "ci_95": [
+            3.64,
+            4.09
+          ]
+        },
+        "safety": {
+          "n": 20,
+          "mean": 3.7,
+          "pass_rate": 0.5,
+          "ci_95": [
+            3.34,
+            4.06
+          ]
+        },
+        "translation": {
+          "n": 10,
+          "mean": 2.86,
+          "pass_rate": 0.0,
+          "ci_95": [
+            2.8,
+            2.98
+          ]
+        }
+      },
+      "per_benchmark": {
+        "general": 4.275,
+        "yoruba": 3.49
+      },
+      "date": "2026-11-26",
+      "run_ids": [
+        "20261126-openai-gpt-oss-120b-general",
+        "20261126-openai-gpt-oss-120b-yoruba"
+      ]
+    }
+  ],
+  "pairwise": [
+    {
+      "model_a": "gemini-3.5-flash-lite",
+      "model_b": "openai/gpt-oss-120b",
+      "n": 40,
+      "wins_a": 6,
+      "wins_b": 12,
+      "ties": 22,
+      "win_rate_a": 0.15,
+      "win_rate_b": 0.3,
+      "mean_a": 3.925,
+      "mean_b": 4.275,
+      "per_category": {
+        "factual": {
+          "a": 2,
+          "b": 0,
+          "tie": 8,
+          "n": 10
+        },
+        "instruction_following": {
+          "a": 1,
+          "b": 1,
+          "tie": 8,
+          "n": 10
+        },
+        "reasoning": {
+          "a": 3,
+          "b": 1,
+          "tie": 6,
+          "n": 10
+        },
+        "safety": {
+          "a": 0,
+          "b": 10,
+          "tie": 0,
+          "n": 10
+        }
+      },
+      "benchmark": "general"
+    },
+    {
+      "model_a": "gemini-3.5-flash-lite",
+      "model_b": "openai/gpt-oss-120b",
+      "n": 60,
+      "wins_a": 27,
+      "wins_b": 9,
+      "ties": 24,
+      "win_rate_a": 0.45,
+      "win_rate_b": 0.15,
+      "mean_a": 3.75,
+      "mean_b": 3.49,
+      "per_category": {
+        "factual_qa": {
+          "a": 6,
+          "b": 1,
+          "tie": 3,
+          "n": 10
+        },
+        "maths_reasoning": {
+          "a": 4,
+          "b": 5,
+          "tie": 1,
+          "n": 10
+        },
+        "instruction_following": {
+          "a": 4,
+          "b": 1,
+          "tie": 5,
+          "n": 10
+        },
+        "safety": {
+          "a": 8,
+          "b": 0,
+          "tie": 2,
+          "n": 10
+        },
+        "translation": {
+          "a": 1,
+          "b": 0,
+          "tie": 9,
+          "n": 10
+        },
+        "reasoning": {
+          "a": 4,
+          "b": 2,
+          "tie": 4,
+          "n": 10
+        }
+      },
+      "benchmark": "yoruba"
+    }
+  ]
+}
