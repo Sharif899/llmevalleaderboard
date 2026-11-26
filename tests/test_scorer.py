@@ -21,8 +21,15 @@ from llm_eval_leaderboard.scorer import (
     score_response,
 )
 
-YORUBA_SRC = Path.home() / "workspace" / "yoruba-llm-benchmark" / "src"
 REPO_ROOT = Path(__file__).resolve().parents[1]
+
+# Test fixtures live beside the tests; make them importable without a
+# package install. The mocks are vendored in tests/yoruba_mocks.py so
+# this test runs in CI, where the Yoruba benchmark checkout does not
+# exist.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from yoruba_mocks import MOCKS, Item  # noqa: E402
 
 
 def test_empty_response_scores_one_on_content_criteria():
@@ -257,13 +264,8 @@ EXPECTED = {
 
 
 def _load_yoruba_items():
-    """Build Yoruba benchmark Item objects from this repo's copy of
-    the Yoruba data, so the mocks can answer them."""
-    if not YORUBA_SRC.is_dir():
-        pytest.skip("Yoruba benchmark source not present")
-    sys.path.insert(0, str(YORUBA_SRC))
-    from yoruba_benchmark.data import Item  # noqa: PLC0415
-
+    """Build Item objects from this repo's copy of the Yoruba data,
+    so the mocks can answer them."""
     items = []
     with open(REPO_ROOT / "data" / "yoruba.jsonl", encoding="utf-8") as handle:
         for line in handle:
@@ -280,9 +282,6 @@ def test_scorer_reproduces_yoruba_published_mock_numbers(model_name):
     3.077/0.083). This repo's scorer must reproduce them within
     0.01, proving the port is faithful. The mocks are test fixtures
     only, not model results."""
-    sys.path.insert(0, str(YORUBA_SRC))
-    from yoruba_benchmark.mocks import MOCKS  # noqa: PLC0415
-
     items = _load_yoruba_items()
     assert len(items) == 60
     mock = MOCKS[model_name]
